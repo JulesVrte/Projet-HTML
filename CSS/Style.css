@@ -23,38 +23,32 @@ nav{
     display: flex;
     justify-content: space-between
 }
-
 nav ul{
     display: flex;
     gap: 4em;
     list-style-type: none;
     margin-top: 0%;
 }
-
 nav li {
     padding-top: 2em;
     
 }
 nav a {
     color: #000;
+    text-decoration: none;
 }
-
 nav li a:hover {
     color: #0065FC;
     border-top: #0065FC solid 2px;
     padding-top: 1.87em;
     
 }
-nav li a:any-link{
-    text-decoration: none ;
-    
-}
+
 nav img{
     width: 10%;
     height: 10%;
     margin: 3% 0%;
 }
-
 #titre h1 {
     font-size: 1.2em;
 }
@@ -89,9 +83,10 @@ nav img{
     align-self: center;
     
 }
-#zone_texte p {
-    width: 53%;
-    text-align: center;
+#zone_texte input {
+    width: 80%;
+    border: none;
+    padding-left: 20px;
 }
 #btn_recherche i{
     display: none
@@ -105,7 +100,6 @@ nav img{
     border-radius: 0px 14px 14px 0px;
     color: #FFF;
 }
-
 #filtres {
     display: flex;  
     margin-top: 1em;
@@ -172,7 +166,6 @@ li.filtre:hover{
     display: flex;
     justify-content: space-between;
 }
-
 #hébergement{
     display: flex;
     justify-content: space-evenly;
@@ -184,7 +177,6 @@ li.filtre:hover{
     padding-top: 1.6em;
     height: fit-content;
 }
-
 #hébergement ul {
     display: flex;
     grid-gap: 1em;
@@ -193,10 +185,8 @@ li.filtre:hover{
     list-style-type: none;
     padding: 0%;
     justify-content: center;
-
 }
 #hébergement li{
-    width: 30%;
     height: 13.5em;
     background-color: #FFF;
     display: flex;
@@ -204,8 +194,15 @@ li.filtre:hover{
     border-radius: 1em;
     margin:0%;
     justify-content: center;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
 
-} 
+#section1 a {
+    display: flex;
+    text-decoration: none;
+    width: 260px;
+    color: #000
+}
 #hébergement img{
     width: 100%;
     object-fit: cover;
@@ -216,19 +213,16 @@ li.filtre:hover{
 #hébergement h1 {
     width: 93%;
 }
-
 #hébergement h2 {
     margin: 0;
     font-size: 0.9em;
     width: 90%;
 }
-
 #hébergement h3{
     width: 93%;
     margin-bottom: 2em;
 
 }
-
 #hébergement p{
     margin: 0;
     width: 90%;
@@ -252,6 +246,7 @@ li.filtre:hover{
     padding-top: 1.6em;
     gap: 1em;
 }
+
 #headerpop{
     display: flex;
     width: 89%;
@@ -265,10 +260,11 @@ li.filtre:hover{
     background-color: #FFF;
     border-radius: 1em;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 #populaire img{
     width: 7.9em;
-    height: 100%;
+    height: 9.1em;
     border-radius: 1em 0 0 1em;
     border:5px solid #FFFFFF;
 }
@@ -278,17 +274,20 @@ li.filtre:hover{
 }
 #populaire p{
     font-size: 0.9em;
-    margin:0 0 3em 0;
+    margin:0 0 15px 0;
 }
-
 #populaire i{
     align-self: center;
     width: 1em;
-    height: 1em;
-    
+    height: 1em;   
+}
+#populaire a {
+    width: 90%;
+    height: 33%;
 }
 .notepop{
     width: 55%;
+    padding-top: 30px;
 }
 #populaire i.fa-solid{
     width: 0.9em;
@@ -296,7 +295,6 @@ li.filtre:hover{
     align-self: center;
     color: #0065FC;
 }
-
 
 #section2 ul{
     display: flex;
@@ -361,7 +359,7 @@ footer{
     font-size: 1em;
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1024px){
     body {
         width: 100%;
     }
@@ -422,7 +420,6 @@ footer{
     }
     #hébergement li{
         width: 95%;
-        border: 2px solid #f6f6f6;
     }
     #populaire {
         flex-direction: row;
@@ -467,6 +464,7 @@ footer{
     #barre_recherche{
         width: 100%;
         margin: 0;
+        height: 50px;
     }
     #btn_recherche{
         width: 30%;
@@ -505,6 +503,11 @@ footer{
         width: 100%;
         flex-wrap: wrap-reverse;
         align-content: space-around;
+        flex-direction: row-reverse;
+    }
+    #section1 a {
+        width: 100%;
+        justify-content: center;
     }
     #populaire article{
         width: 90%;
@@ -529,6 +532,11 @@ footer{
     #section2 li{
         width: 100%;
         height: 50%;
+    }
+
+    #section2 img {
+        height: 10em;
+        
     }
 
     #cont_foot {
