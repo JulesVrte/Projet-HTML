@@ -31,6 +31,9 @@ nav ul{
 }
 nav li {
     padding-top: 2em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     
 }
 nav a {
@@ -50,13 +53,16 @@ nav img{
     margin: 3% 0%;
 }
 #titre h1 {
-    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
 #sous-titre h2 {
     font-weight: 400;
-    line-height: 10%;
+    font-size: 16px;
+    line-height: 19px;
     margin: 0.4em 0 2.5em;
-    font-size: 0.9em;
 }
 #barre_recherche{
     display: flex;
@@ -87,6 +93,9 @@ nav img{
     width: 80%;
     border: none;
     padding-left: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 #btn_recherche i{
     display: none
@@ -99,6 +108,9 @@ nav img{
     border: 1px solid #0065FC;
     border-radius: 0px 14px 14px 0px;
     color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 #filtres {
     display: flex;  
@@ -124,10 +136,15 @@ li.filtre{
     border: 2px solid #D9D9D9;
     border-radius: 25em;
     padding: 0.8em;
-    
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;    
 }
 li#filtre_titre{
     align-self: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 
@@ -161,6 +178,9 @@ li.filtre:hover{
 #information p {
     margin: 0;
     align-self: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 #section1{
     display: flex;
@@ -212,20 +232,30 @@ li.filtre:hover{
 }
 #hébergement h1 {
     width: 93%;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
 #hébergement h2 {
     margin: 0;
-    font-size: 0.9em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
     width: 90%;
 }
 #hébergement h3{
     width: 93%;
     margin-bottom: 2em;
-
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 #hébergement p{
     margin: 0;
     width: 90%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 #hébergement div {
     width: 89%;
@@ -252,6 +282,12 @@ li.filtre:hover{
     width: 89%;
     justify-content: space-between;
 }
+#headerpop h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
 #populaire article{
     display: flex;
     flex-direction: column;
@@ -269,11 +305,15 @@ li.filtre:hover{
     border:5px solid #FFFFFF;
 }
 #populaire h2 {
-    font-size: 0.9em;
     width: 45%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 #populaire p{
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     margin:0 0 15px 0;
 }
 #populaire i{
@@ -295,7 +335,11 @@ li.filtre:hover{
     align-self: center;
     color: #0065FC;
 }
-
+#section2 a {
+    width: 300px;
+    text-decoration: none;
+    color: #000;    
+}
 #section2 ul{
     display: flex;
     grid-gap: 2em;
@@ -313,17 +357,25 @@ li.filtre:hover{
 }
 
 #section2 li{
-    width: 100%;
+    width: 300px;
     height: 28em;
     display: flex;
     flex-direction: column;
     border: #F0F2F6 solid 1px;
     border-radius: 2em ;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 
+#section2 h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
 #section2 h2{
     margin: 7% 7%;
-    font-size: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
     display: flex;
     align-items: center;
 }
@@ -403,6 +455,13 @@ footer{
     #headerpop {
         width: 94%;
     }
+    #section2 li {
+        width: 187px;
+        height: 267px;
+    }
+    #section2 img {
+        height: 210px;
+    }
 }
 
 
@@ -420,6 +479,9 @@ footer{
     }
     #hébergement li{
         width: 95%;
+    }
+    #hébergement h3 {
+        display: none
     }
     #populaire {
         flex-direction: row;
@@ -524,10 +586,15 @@ footer{
 
     #section2 h1{
         width: 95%;
+        margin-top: 100px;
+    }
+    #section2 a {
+        width: 334px;
     }
     #section2 ul{
         width: 95%;
         flex-direction: column;
+        align-items: center;
     }
     #section2 li{
         width: 100%;
