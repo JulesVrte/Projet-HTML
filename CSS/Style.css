@@ -2,7 +2,7 @@ body{
     display: flex;
     font-size: 1em;
     justify-content: center;
-    width: 1400px;
+    width: 1440px;
     font-family: 'Raleway';
     font-style: normal;
     flex-wrap: wrap;
@@ -30,17 +30,18 @@ nav ul{
     margin-top: 0%;
 }
 nav li {
-    padding-top: 2em;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     
 }
 nav a {
+    padding-top: 32px;
     color: #000;
     text-decoration: none;
+    
 }
-nav li a:hover {
+nav a:hover {
     color: #0065FC;
     border-top: #0065FC solid 2px;
     padding-top: 1.87em;
@@ -328,6 +329,7 @@ li.filtre:hover{
 .notepop{
     width: 55%;
     padding-top: 30px;
+    padding-bottom: 5px;
 }
 #populaire i.fa-solid{
     width: 0.9em;
@@ -411,7 +413,7 @@ footer{
     font-size: 1em;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:992px){
     body {
         width: 100%;
     }
@@ -426,6 +428,7 @@ footer{
     }
     #information {
         width: 60%;
+        justify-content: space-around;
     }
     #section1 {
         flex-direction: column;
@@ -462,6 +465,10 @@ footer{
     #section2 img {
         height: 210px;
     }
+    #section2 a {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -487,6 +494,10 @@ footer{
         flex-direction: row;
         width: 100%;
         border-radius: 0px;
+        margin: 20px
+    }
+    #titre {
+        margin-top: 130px;
     }
     nav{
         display: flex;
@@ -495,6 +506,10 @@ footer{
         width: 100%;
         margin: 0;
         padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
     }
     nav img{
         width: 20%;
@@ -503,8 +518,9 @@ footer{
         width: 100%;
         padding : 0;
         gap: 0;
+        margin: 0;
     }
-    nav li{
+    nav a{
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         padding: 23px 0 ;
@@ -512,7 +528,7 @@ footer{
         justify-content: center;
 
     }
-    nav li:hover {
+    nav a:hover {
         border-top: none;
         color: #0065FC;
         border-bottom: #0065FC solid 2px;
@@ -557,6 +573,7 @@ footer{
     }
     #information {
         width: 100%;
+        justify-content: space-around;
     }
     #information p{
         width: 87%;
@@ -573,6 +590,10 @@ footer{
     }
     #populaire article{
         width: 90%;
+        height: 150px;
+    }
+    #populaire img{
+        height: 135px;
     }
     #headerpop{
         width: 90%;
@@ -585,8 +606,9 @@ footer{
     }
 
     #section2 h1{
-        width: 95%;
-        margin-top: 100px;
+        width: 49%;
+        margin: 70px 0 0 30px;
+        align-self: start;
     }
     #section2 a {
         width: 334px;
