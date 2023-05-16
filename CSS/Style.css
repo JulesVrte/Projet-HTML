@@ -33,15 +33,15 @@ nav li {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    padding-top: 32px;
     
 }
 nav a {
-    padding-top: 32px;
     color: #000;
     text-decoration: none;
     
 }
-nav a:hover {
+nav li a:hover {
     color: #0065FC;
     border-top: #0065FC solid 2px;
     padding-top: 1.87em;
@@ -219,13 +219,12 @@ li.filtre:hover{
 }
 
 #section1 a {
-    display: flex;
     text-decoration: none;
     width: 260px;
     color: #000
 }
 #hébergement img{
-    width: 100%;
+    width: 250px;
     object-fit: cover;
     height: 7.7em;
     border-radius: 1em 1em 0 0;
@@ -238,7 +237,7 @@ li.filtre:hover{
     line-height: 26px;
 }
 #hébergement h2 {
-    margin: 0;
+    margin: 0 0 0 10px;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -257,9 +256,11 @@ li.filtre:hover{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    margin: 10px 0 0 10px
 }
 #hébergement div {
     width: 89%;
+    margin: 10px 0 0 10px
 }
 #hébergement i.fa-solid{
     width: 0.9em;
@@ -466,8 +467,7 @@ footer{
         height: 210px;
     }
     #section2 a {
-        display: flex;
-        justify-content: center;
+        width: 187px;
     }
 }
 
@@ -489,6 +489,9 @@ footer{
     }
     #hébergement h3 {
         display: none
+    }
+    #hébergement img {
+        width: 97%;
     }
     #populaire {
         flex-direction: row;
@@ -520,7 +523,7 @@ footer{
         gap: 0;
         margin: 0;
     }
-    nav a{
+    nav li{
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         padding: 23px 0 ;
@@ -528,7 +531,7 @@ footer{
         justify-content: center;
 
     }
-    nav a:hover {
+    nav li:hover {
         border-top: none;
         color: #0065FC;
         border-bottom: #0065FC solid 2px;
@@ -611,7 +614,7 @@ footer{
         align-self: start;
     }
     #section2 a {
-        width: 334px;
+        width: 100%;
     }
     #section2 ul{
         width: 95%;
@@ -625,7 +628,7 @@ footer{
 
     #section2 img {
         height: 10em;
-        
+        width: 100%;
     }
 
     #cont_foot {
