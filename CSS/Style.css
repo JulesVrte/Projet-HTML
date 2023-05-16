@@ -2,7 +2,7 @@ body{
     display: flex;
     font-size: 1em;
     justify-content: center;
-    width: 1440px;
+    max-width: 1440px;
     font-family: 'Raleway';
     font-style: normal;
     flex-wrap: wrap;
@@ -494,7 +494,7 @@ footer{
         flex-direction: row;
         width: 100%;
         border-radius: 0px;
-        margin: 20px
+        margin: 20px 0 0 0
     }
     #titre {
         margin-top: 130px;
